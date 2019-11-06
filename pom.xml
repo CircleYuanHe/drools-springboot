@@ -47,6 +47,12 @@
             <groupId>org.drools</groupId>
             <artifactId>drools-compiler</artifactId>
             <version>${drools.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>ecj</artifactId>
+                    <groupId>org.eclipse.jdt.core.compiler</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.drools</groupId>
@@ -108,11 +114,6 @@
             <artifactId>druid</artifactId>
             <version>${druid.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>${mybatis.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -125,6 +126,12 @@
             <groupId>com.hynnet</groupId>
             <artifactId>json-lib</artifactId>
             <version>2.4</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>commons-lang</artifactId>
+                    <groupId>commons-lang</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -147,11 +154,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>5.0.0.BUILD-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
