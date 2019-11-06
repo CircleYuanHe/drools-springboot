@@ -3,10 +3,12 @@ package com.xu.drools.dao;
 
 import com.xu.drools.bean.Rules;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Mapper
+@Service
 public interface RulesDao {
 
     @Select("SELECT * FROM drools_rule where id = #{id}")

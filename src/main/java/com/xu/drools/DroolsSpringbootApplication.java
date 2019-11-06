@@ -6,10 +6,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@SpringBootApplication
+
 @ComponentScan(basePackages ="com.xu.drools")
 @EnableScheduling
 @EnableSwagger2
+@SpringBootApplication
 public class DroolsSpringbootApplication {
 
 	public static void main(String[] args) {

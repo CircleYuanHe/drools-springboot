@@ -3,9 +3,9 @@ server:
 spring:
     datasource:
             driver-class-name: com.mysql.jdbc.Driver
-            url: jdbc:mysql://localhost:3306/xus?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&noAccessToProcedureBodies=true
-            username: root
-            password: 4321
+            url: jdbc:mysql://10.26.21.12:3306/trusteeship_performance?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+            username: rd
+            password: homerent
             type: com.alibaba.druid.pool.DruidDataSource
             initialSize: 5
             minIdle: 5
